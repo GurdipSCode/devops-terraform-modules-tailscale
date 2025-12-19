@@ -1,6 +1,61 @@
+variable "acls_externally_managed_on" {
+  description = "Whether ACLs are managed externally"
+  type        = bool
+  default     = true
+}
+
+variable "acls_external_link" {
+  description = "URL to external ACL management system or repository"
+  type        = string
+  default     = "https://github.com/octocat/Hello-World"
+}
+
+variable "devices_approval_on" {
+  description = "Require approval for new devices joining the tailnet"
+  type        = bool
+  default     = true
+}
+
+variable "devices_auto_updates_on" {
+  description = "Enable automatic updates for devices"
+  type        = bool
+  default     = true
+}
+
+variable "devices_key_duration_days" {
+  description = "Number of days device auth keys remain valid"
+  type        = number
+  default     = 5
+}
+
+variable "users_approval_on" {
+  description = "Require approval for new users joining the tailnet"
+  type        = bool
+  default     = true
+}
+
+variable "users_role_allowed_to_join_external_tailnet" {
+  description = "User role allowed to join an external tailnet"
+  type        = string
+  default     = "member"
+}
+
+variable "posture_identity_collection_on" {
+  description = "Enable posture identity collection"
+  type        = bool
+  default     = true
+}
+
+variable "https_enabled" {
+  description = "Enable HTTPS features"
+  type        = bool
+  default     = true
+}
+
 variable "contact_email" {
   description = "Point of contact e-mail address" 
 }
+
 variable "tailscale_auth_key" {
   description = "Tailscale authentication key (auth key or OAuth client secret)"
   type        = string
