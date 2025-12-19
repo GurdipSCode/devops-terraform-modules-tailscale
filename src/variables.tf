@@ -1,3 +1,6 @@
+variable "contact_email" {
+  description = "Point of contact e-mail address" 
+}
 variable "tailscale_auth_key" {
   description = "Tailscale authentication key (auth key or OAuth client secret)"
   type        = string
