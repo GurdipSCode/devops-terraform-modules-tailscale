@@ -1,4 +1,4 @@
-# devops-terraform-modules-opentofu
+# devops-terraform-modules-tailscale
 
 [![OpenTofu](https://img.shields.io/badge/OpenTofu-FFDA18?logo=opentofu&logoColor=black)](https://opentofu.org/)
 [![Tailscale](https://img.shields.io/badge/Tailscale-000000?logo=tailscale&logoColor=white)](https://tailscale.com)
